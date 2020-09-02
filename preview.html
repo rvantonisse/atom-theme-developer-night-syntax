@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌛 Developer's Night Syntax</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+
+        color: white;
+        background-color: #333;
+      }
+
+      .container {}
+
+      #content {}
+
+      input[type="text"] {}
+
+      input[type="checkbox"]:checked + label::before {
+        content: ":)";
+        display: block;
+
+      }
+    </style>
+
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <main id="content" class="container" data-bind="app" title="main content">
+      <h1>Developer's Night Syntax 🌛</h1>
+
+      <section>
+        <h2>Colors</h2>
+        <p><a href="#lorem">Lorem ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+    </main>
+
+    <footer>
+      <form id="contact" action="index.html" method="post">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" cols="30" rows="10"></textarea>
+
+        <input type="checkbox" id="human">
+        <label for="human">I promise that I am really a human.</label>
+      </form>
+    </footer>
+
+    <script type="text/javascript">
+
+      const stringer = 'string';
+      let someList = [
+        {
+          key: 'value'
+        }
+      ];
+
+      // This is a bad / invalid multiline string!
+      const multiString = 'Bad
+        multi
+        lined
+        string... :/
+      ';
+
+      const templateString = `<p class="${color}">I am a ${color} paragraph</p>`;
+
+      const SOME_CONST = 'I am a constant';
+
+      const $someDomNode = document.createElement('div');
+      $someDomNode.innerHTML = `
+        <p class="${color}">
+          A ${color} paragraph...
+        </p>`;
+
+      console.log($someDomNode);
+
+      function someFn(param) {
+
+        if (param === true) {
+          return undefined;
+        }
+
+        for (var i = 0; i < param.items.length; i++) {
+          param.items[i];
+        }
+
+        return param;
+      }
+
+      someFn('yolo');
+      someFn(SOME_CONST);
+      someFn(someVar, anotherVar);
+
+    </script>
+
+    <script context="module">
+      import Component, { utilityFn, html } from '@awesome/core';
+
+      class FormComponent extends Component {
+        constructor(super) {
+          super();
+        }
+
+        static props = {};
+
+        render(props, context) {
+          return html`
+            <form>
+              ${ props.children }
+              <Component />
+            </form>
+          `;
+        }
+      }
+
+    </script>
+  </body>
+</html>

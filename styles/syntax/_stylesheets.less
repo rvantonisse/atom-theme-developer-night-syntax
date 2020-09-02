@@ -1,0 +1,23 @@
+.syntax--css,
+.syntax--postcss,
+.syntax--less,
+.syntax--scss {
+
+  .syntax--entity {
+
+    &.syntax--other.syntax--attribute-name {
+
+      &.syntax--class {
+        color: @syntax-constant-color;
+      }
+      &.syntax--id {
+        color: @syntax-reserved-color;
+      }
+    }
+  }
+
+  .syntax--support.syntax--type.syntax--property-name {
+    color: @syntax-text-color;
+    font-weight: bold;
+  }
+}

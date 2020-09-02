@@ -1,0 +1,40 @@
+/**
+ *  THESE COLORS ARE SPECIFIC TO THE THEME.
+ *  DO NOT USE IN A PACKAGE!
+ */
+
+// hsl settings
+@hue-primary: 220;
+@saturation-base: 80%;
+@lightness-base: 50%;
+
+// Colors
+@red: hsl(350, @saturation-base, @lightness-base);
+@red-fg: lighten(@red, 20%);
+@red-bg: darken(@red, 40%);
+
+@green: spin(@red, 120);
+@green-fg: darken(@green, 14%);
+@green-bg: darken(@green, 40%);
+
+@blue: spin(@green, 120);
+@blue-fg: lighten(@blue, 20%);
+@blue-bg: darken(@blue, 40%);
+
+// Secondary
+@yellow: spin(@red, 60);
+@yellow-fg: darken(@yellow, 13%);
+@yellow-bg: darken(@yellow, 40%);
+
+@teal: spin(@yellow, 120);
+@teal-fg: darken(@teal, 15%);
+@teal-bg: darken(@teal, 40%);
+
+@purple: spin(@teal, 120);
+@purple-fg: lighten(@purple, 20%);
+@purple-bg: darken(@purple, 40%);
+
+// Tertiary
+@orange: spin(@red, 30);
+@orange-fg: lighten(@orange, 20%);
+@orange-bg: darken(@orange, 45%);
