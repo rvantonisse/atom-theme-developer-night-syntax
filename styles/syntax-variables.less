@@ -7,36 +7,37 @@
 @syntax-text-color: @yellow-fg;
 @syntax-background-color: @orange-bg;
 
-@syntax-invisible-character-color: @yellow;
+@syntax-invisible-character-color: @yellow-fg;
 @syntax-cursor-color: @syntax-text-color;
 @syntax-selection-color: lighten(@blue-bg, 5%);
 
 // Syntax base colors
-@syntax-comment-color: @yellow;
-@syntax-constant-color: @teal-fg;
+@syntax-comment-color: @yellow-fg;
+@syntax-constant-color: @blue-fg;
 @syntax-keyword-color: @green-fg;
 @syntax-string-color: @syntax-text-color;
 @syntax-reserved-color: @purple-fg;
 @syntax-entity-color: @red-fg;
-@syntax-function-color: @blue-fg;
-@syntax-variable-color: @red-fg;
+@syntax-function-color: @teal-fg;
+@syntax-variable-color: @orange-fg;
+@syntax-storage-color: @red-fg;
 @syntax-class-color: @orange-fg;
 
 // Guide colors
 @syntax-wrap-guide-color: @yellow-fg;
-@syntax-indent-guide-color: darken(@yellow, 25%);
+@syntax-indent-guide-color: darken(@yellow-fg, 25%);
 
 // Sizes
 @syntax-border-radius: 3px;
 
 // For find and replace markers
-@syntax-result-marker-color: @yellow;
-@syntax-result-marker-color-selected: @blue;
+@syntax-result-marker-color: @yellow-fg;
+@syntax-result-marker-color-selected: @blue-fg;
 
 // Gutter colors
 @syntax-gutter-text-color: @syntax-text-color;
 @syntax-gutter-text-color-selected: darken(@syntax-text-color, 5%);
-@syntax-gutter-border-color: @yellow;
+@syntax-gutter-border-color: @yellow-fg;
 @syntax-gutter-background-color: darken(@syntax-background-color, 3%);
 @syntax-gutter-background-color-selected: @syntax-selection-color;
 
