@@ -35,6 +35,23 @@ And it is super simple!
 ## JavaScript
 
 ```javascript
+function functionName() {
+
+  const newThing = {};
+
+  for (var variable in thing) {
+    if (thing.hasOwnProperty(variable)) {
+      newThing[variable] = thing[variable];
+    }
+  }
+
+  return newThing;
+}
+
+const arrowFunction = () => {
+  return {};
+}
+
 
 ```
 

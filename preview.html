@@ -18,7 +18,7 @@
         background-color: #333;
       }
 
-      .container {}
+      .container:not(.box) {}
 
       #content {}
 
@@ -35,7 +35,7 @@
   </head>
   <body>
     <main id="content" class="container" data-bind="app" title="main content">
-      <h1>Developer's Night Syntax 🌛</h1>
+      <h1 style="font-size: 2em;">Developer's Night Syntax 🌛</h1>
 
       <section>
         <h2>Colors</h2>
@@ -74,7 +74,7 @@
 
       const templateString = `<p class="${color}">I am a ${color} paragraph</p>`;
 
-      const SOME_CONST = 'I am a constant';
+      let SOME_CONST = 'I am a constant';
 
       const $someDomNode = document.createElement('div');
       $someDomNode.innerHTML = `
@@ -116,7 +116,13 @@
         render(props, context) {
           return html`
             <form>
-              ${ props.children }
+              ${
+                props
+                  .children
+                  .map((child) => {
+                    return child.label.trim();
+                  });
+              } other text
               <Component />
             </form>
           `;
