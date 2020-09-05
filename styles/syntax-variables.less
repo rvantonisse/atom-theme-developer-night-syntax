@@ -4,24 +4,26 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: @yellow-fg;
-@syntax-background-color: @orange-bg;
+// Editor
+@syntax-text-color: hsl(hue(@yellow-fg), 50%, 70%);
+@syntax-background-color: lighten(@orange-bg, -1%);
 
 @syntax-invisible-character-color: @yellow-fg;
 @syntax-cursor-color: @syntax-text-color;
-@syntax-selection-color: lighten(@blue-bg, 5%);
+@syntax-selection-color: @blue-bg;
 
 // Syntax base colors
 @syntax-comment-color: @yellow-fg;
-@syntax-constant-color: @blue-fg;
-@syntax-keyword-color: @green-fg;
 @syntax-string-color: @syntax-text-color;
+@syntax-constant-color: @teal-fg;
+@syntax-keyword-color: @syntax-text-color;
 @syntax-reserved-color: @purple-fg;
 @syntax-entity-color: @red-fg;
-@syntax-function-color: @teal-fg;
+@syntax-attribute-color: @yellow-fg;
+@syntax-class-color: @green-fg;
+@syntax-function-color: @blue-fg;
 @syntax-variable-color: @orange-fg;
 @syntax-storage-color: @red-fg;
-@syntax-class-color: @orange-fg;
 
 // Guide colors
 @syntax-wrap-guide-color: @yellow-fg;
