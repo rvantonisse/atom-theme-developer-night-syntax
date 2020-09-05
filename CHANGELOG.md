@@ -16,6 +16,17 @@ Types of changes:
 
 ## Unreleased [0.0.0]
 
+## [v0.3.0] - 2020-09-05
+
+### Changed
+
+- Change keyword color to \@yellow-fg. Bolder text in dark themes do not have the same effect as it has in light themes.
+
+---
+
+## [v0.1.0] - 2020-09-04
+
 Initial release, darkened clone of [Developer Day](https://github.com/rvantonisse/atom-theme-developer-night-syntax).
 
+See Developer's Day for major changes. This changelog will cover differences in Developer's Night.
 ---
