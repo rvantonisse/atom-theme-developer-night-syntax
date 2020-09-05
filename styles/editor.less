@@ -20,6 +20,7 @@ atom-text-editor {
 
     .line-number {
       opacity: 1;
+      height: 1.5em;
 
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
@@ -44,9 +45,24 @@ atom-text-editor {
         color: @syntax-color-modified;
         background-color: @background-color-modified;
       }
+
+      &.git-line-removed {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          top: auto !important;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          overflow-y: hidden;
+          content: "";
+          background-color: @syntax-color-removed;
+        }
+      }
     }
   }
-
   .lines {
     .cursor-line {
       background-color: lighten(@syntax-selection-color, 3%);
@@ -66,8 +82,7 @@ atom-text-editor {
     background-color: transparent;
   }
 
-  .cursors > .cursor {
-    opacity: 1;
+  .cursor {
     border-width: 2px;
     border-color: @syntax-cursor-color;
     border-radius: @syntax-border-radius;

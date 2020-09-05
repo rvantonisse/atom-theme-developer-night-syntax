@@ -1,21 +1,18 @@
 .syntax--css,
-.syntax--less,
 .syntax--postcss,
+.syntax--less,
 .syntax--scss {
-  .syntax--entity {
-    &.syntax--other.syntax--attribute-name {
-      &.syntax--class {
-        color: @syntax-constant-color;
-      }
 
+  .syntax--entity {
+
+    &.syntax--other.syntax--attribute-name {
+
+      &.syntax--class {
+        color: @syntax-class-color;
+      }
       &.syntax--id {
         color: @syntax-reserved-color;
       }
     }
-  }
-
-  .syntax--support.syntax--type.syntax--property-name {
-    color: @syntax-variable-color;
-    font-style: italic;
   }
 }
