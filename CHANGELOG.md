@@ -16,6 +16,16 @@ Types of changes:
 
 ## Unreleased [0.0.0]
 
+---
+
+## [v0.4.0] - 2020-09-14
+
+See [Developer's Day release v0.4.0](https://github.com/rvantonisse/atom-theme-developer-day-syntax/blob/master/CHANGELOG.md#v040---2020-09-14) for common syntax changes.
+
+No notable changes for Developer's Night.
+
+---
+
 ## [v0.3.0] - 2020-09-05
 
 ### Changed
